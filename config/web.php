@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'ru',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -48,6 +49,8 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '/' => '/site/index',
+                'map-data' => '/ya-map/get-data',
+                'map-put-data' => '/ya-map/set-data',
             ],
         ],
 

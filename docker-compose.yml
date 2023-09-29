@@ -27,7 +27,7 @@ services:
       - db
 
   db:
-    image: postgres:alpine
+    image: postgis/postgis:15-3.3-alpine
     volumes:
       - site-db:/var/lib/postgresql/data
       - ./docker/dumps:/dumps
