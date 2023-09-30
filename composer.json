@@ -20,7 +20,8 @@
         "yiisoft/yii2-symfonymailer": "~2.0.3",
         "kartik-v/yii2-widget-select2": "*",
         "select2/select2": "^4.0",
-        "kartik-v/yii2-widget-switchinput": "^1.3"
+        "kartik-v/yii2-widget-switchinput": "^1.3",
+        "m1/env": "^2.2"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0"
@@ -41,6 +42,12 @@
         "post-create-project-cmd": [
             "yii\\composer\\Installer::postCreateProject",
             "yii\\composer\\Installer::postInstall"
+        ]
+    },
+    "autoload": {
+        "files": [
+            "config/env.php",
+            "vendor/yiisoft/yii2/Yii.php"
         ]
     },
     "extra": {
